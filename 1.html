@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
+    <style>
+    #submitBtn{
+    
+        border-radius: 20px;
+    }
+    #switch{
+        margin-left: 100px;
+    }
+    body{
+        background-color: burlywood;
+    }
+    div{
+        margin-left: 70px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+  }
+
+  .form-container {
+    width: 300px; /* Adjust the width of the form container */
+  }
+
+  form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+    </style>
 </head>
 <body>
-    <h1>Hello! Fellow Mates, this is the Sign-In Page</h1>
-    <a href="./2.html">For Sign-UP</a>
-    <iframe src="https://www.youtube.com/watch?v=8PCwX2wRJqQ" title="Messi"></iframe>
+    <div class="form-container">
+    <header>
+        <h1>The Sign-In Page</h1>
+    </header>
+    
+    <form action="biteMe.it" method="post">
+        <main>
+        <label for="userEmail"><b>User-Email: </b></label>
+        <input type="email" name="userEmail" id="userEmail" placeholder="Enter you email">
+        <br><br>
+
+        <label for="userPassword"><b>Password: </b></label>
+        <input type="password" name="userPassword" id="userPassword">
+        <br><br>
+
+
+        <input type="submit"  id="submitBtn">
+        <a id="switch" href="./2.html">Sign-Up??</a>
+    </main>
+    </form>
+   </div>
 </body>
 </html>

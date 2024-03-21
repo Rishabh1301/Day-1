@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 500px; /* Adjust the width of the form container */
+        }
+
+        form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #switch{
+            margin-left: 300px;
+        }
+        #submitBtn{
+            
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello! Fellow Mates, this is the Sign-Up Page</h1>
-    <a href="./1.html">For Sign-IN</a>
+    <div class="form-container">
+    <header>
+        <h1>Hello and Welcome, this is the Sign-Up Page</h1>
+
+    </header>
+    <main>
+    <form action="biteMe.it" method="get">
+        
+        <label for="userEmail"><b>User-Email: <sup>*</sup> </b></label>
+        <input type="email" name="userEmail" id="userEmail" placeholder="Enter you email" required>
+        <br><br>
+
+        <label for="userPassword"><b>Password: <sup>*</sup></b></label>
+        <input type="password" name="userPassword" id="userPassword" required>
+        <br><br>
+
+        <label for="rePassword"><b>Re-enter Password: <sup>*</sup></b></label>
+        <input type="password" name="userPassword" id="rePassword" required>
+        <br><br>
+
+        <label for="gender"><b>Mobile Number: <sup>*</sup></b></label>
+        <label for="Region">Region</label>
+        <select name="Gender" id="gender">
+            <option value="+91">India</option>
+            <option value="+012">Australia</option>
+            <option value="+019">USA</option>
+        </select>
+        <input type="text" name="number" id="number" value="">
+        <br><br>
+
+        <label for="gender"><b>Select your Gender: </b></label>
+        <select name="Gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+
+        <label for="age"><b>Age: </b></label>
+        <input type="number" name="Age" value="age">
+        <br><br>
+
+        <label for="working"><b>Have you applied for the same within past 6 months?<sup>*</sup></b></label>
+
+        <input type="radio" name="Working" value="Yes" id="Yesworking">
+        <label for="Yesworking">Yes</label>
+        <input type="radio" name="Working" value="No" id="Noworking">
+        <label for="Noworking">No</label>
+        
+        <br><br>
+
+
+        <input type="submit"  id="submitBtn">
+        <a id="switch" href="./1.html">Sign-In??</a>
+    
+    </form>
+</div>
+</main>
+
+
+<footer>
+
+</footer>
 </body>
 </html>
